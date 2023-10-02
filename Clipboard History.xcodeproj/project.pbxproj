@@ -17,6 +17,7 @@
 		6951320F2AC5DC15003454B9 /* Clipboard_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6951320E2AC5DC15003454B9 /* Clipboard_Model.swift */; };
 		695132112AC5DC68003454B9 /* Clipboard_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695132102AC5DC68003454B9 /* Clipboard_ViewModel.swift */; };
 		695132132AC5DCD0003454B9 /* Clipboard_Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695132122AC5DCD0003454B9 /* Clipboard_Helpers.swift */; };
+		695132152ACADC23003454B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695132142ACADC23003454B9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		6951320E2AC5DC15003454B9 /* Clipboard_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clipboard_Model.swift; sourceTree = "<group>"; };
 		695132102AC5DC68003454B9 /* Clipboard_ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clipboard_ViewModel.swift; sourceTree = "<group>"; };
 		695132122AC5DCD0003454B9 /* Clipboard_Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clipboard_Helpers.swift; sourceTree = "<group>"; };
+		695132142ACADC23003454B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				695131EA2AC56EEB003454B9 /* Preview Content */,
 				6951320E2AC5DC15003454B9 /* Clipboard_Model.swift */,
 				695132102AC5DC68003454B9 /* Clipboard_ViewModel.swift */,
+				695132142ACADC23003454B9 /* AppDelegate.swift */,
 			);
 			path = "Clipboard History";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				695132152ACADC23003454B9 /* AppDelegate.swift in Sources */,
 				6951320F2AC5DC15003454B9 /* Clipboard_Model.swift in Sources */,
 				695131E62AC56EEB003454B9 /* ContentView.swift in Sources */,
 				695131E42AC56EEB003454B9 /* Clipboard_HistoryApp.swift in Sources */,

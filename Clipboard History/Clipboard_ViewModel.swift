@@ -1,10 +1,3 @@
-//
-//  Clipboard_ViewModel.swift
-//  Clipboard History
-//
-//  Created by Joao Cesar Stange on 28.9.2023.
-//
-
 import Foundation
 import Cocoa
 
