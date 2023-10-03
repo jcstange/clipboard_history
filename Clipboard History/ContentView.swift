@@ -11,7 +11,7 @@ struct ClipboardView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            TextField("Search", text: $search)
+            ClearableTextField(text: $search)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             List(viewModel.filteredClipboard, id: \.self) { item in
                 Section {
@@ -37,6 +37,28 @@ struct ClipboardView: View {
             }}
     }
 
+}
+
+struct ClearableTextField: View {
+    @Binding var text: String
+
+    var body: some View {
+        HStack {
+            TextField("Search", text: $text)
+            if !text.isEmpty {
+                Button(action: {
+                    text = ""
+                }) {
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundColor(.gray)
+                        .padding(.trailing, 8)
+                }
+            }
+        }
+        .padding()
+        .background(Color.gray.opacity(0.2))
+        .cornerRadius(8)
+    }
 }
 
 struct ClipboardView_Previews: PreviewProvider {
