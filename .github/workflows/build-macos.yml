@@ -22,7 +22,7 @@ jobs:
       run: |
         xcodebuild \
           -workspace Clipboard.xcworkspace \  # Specify your Xcode workspace
-          -scheme Clipboard History \                   # Specify your Xcode scheme
+          -scheme Clipboard\ History \                   # Specify your Xcode scheme
           -configuration Release \               # Use Release configuration
           -destination "platform=macOS" \       # Specify the target platform
           build
