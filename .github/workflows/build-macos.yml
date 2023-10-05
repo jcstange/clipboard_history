@@ -11,19 +11,16 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Xcode
-      uses: actions/setup-xcode@v2
+      uses: maxim-lobanov/setup-xcode@v1
       with:
-        xcode-version: '13.0'  # Specify the Xcode version you need
+        xcode-version: '14.2'  # Specify the Xcode version you need
 
+    - name: List
+      run: |
+        xcodebuild -list
     - name: Build macOS Binary
       run: |
-        xcodebuild \
-          -workspace Clipboard.xcworkspace \  # Specify your Xcode workspace
-          -scheme Clipboard\ History \                   # Specify your Xcode scheme
-          -configuration Release \               # Use Release configuration
-          -destination "platform=macOS" \       # Specify the target platform
-          build
-
+        xcodebuild build
