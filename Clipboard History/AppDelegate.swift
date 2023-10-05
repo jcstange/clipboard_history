@@ -12,7 +12,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         if let button = statusItem.button {
-            button.image = NSImage(systemSymbolName: "circle", accessibilityDescription: nil)
+            button.image = NSImage(systemSymbolName: "doc.on.doc", accessibilityDescription: nil)
             button.action = #selector(togglePopover(_:))
         }
         
