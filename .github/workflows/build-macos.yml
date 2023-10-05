@@ -17,10 +17,15 @@ jobs:
       uses: maxim-lobanov/setup-xcode@v1
       with:
         xcode-version: '14.2'  # Specify the Xcode version you need
-
-    - name: List
-      run: |
-        xcodebuild -list
     - name: Build macOS Binary
       run: |
         xcodebuild build
+    - name: Archive Executable
+      run: |
+      # Assuming the app bundle is in the derived data directory
+        mv ~/Library/Developer/Xcode/DerivedData/Clipboard-*/Build/Products/Release/Clipboard\ History.app ./Clipboard\ History.app
+    - name: Upload Executable Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: Clipboard\ History
+        path: ./Clipboard\ History.app
