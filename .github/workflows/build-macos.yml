@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: macos-latest  # Use macOS runner
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -17,15 +16,18 @@ jobs:
       uses: maxim-lobanov/setup-xcode@v1
       with:
         xcode-version: '14.2'  # Specify the Xcode version you need
+
     - name: Build macOS Binary
       run: |
         xcodebuild build
+
     - name: Archive Executable
       run: |
       # Assuming the app bundle is in the derived data directory
         mv ~/Library/Developer/Xcode/DerivedData/Clipboard-*/Build/Products/Release/Clipboard\ History.app ./Clipboard\ History.app
+
     - name: Upload Executable Artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: Clipboard\ History
         path: ./Clipboard\ History.app

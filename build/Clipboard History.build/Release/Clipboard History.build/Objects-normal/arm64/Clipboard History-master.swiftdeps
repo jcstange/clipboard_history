@@ -1,0 +1,11 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "ce682d8ca970786a8cf0a4caa5404d50d44dc81f8b20434c53aa9acdb8d901bb"
+build_start_time: [1696494533, 118533134]
+build_end_time: [1696494536, 885612010]
+inputs:
+  "/Users/softsport/Dev/macos/clipboard_history/Clipboard History/AppDelegate.swift": [1696329658, 255986928]
+  "/Users/softsport/Dev/macos/clipboard_history/Clipboard History/Clipboard_Helpers.swift": [1695917618, 5440473]
+  "/Users/softsport/Dev/macos/clipboard_history/Clipboard History/Clipboard_HistoryApp.swift": [1696329658, 256315946]
+  "/Users/softsport/Dev/macos/clipboard_history/Clipboard History/Clipboard_Model.swift": [1695917587, 195552825]
+  "/Users/softsport/Dev/macos/clipboard_history/Clipboard History/Clipboard_ViewModel.swift": [1696329658, 256544351]
+  "/Users/softsport/Dev/macos/clipboard_history/Clipboard History/ContentView.swift": [1696331246, 942149877]
