@@ -23,10 +23,10 @@ jobs:
 
     - name: Archive Executable
       run: |
-        mv ~/Library/Developer/Xcode/DerivedData/Clipboard-*/Build/Products/Release/Clipboard\ History.app ./Clipboard\ History.app
+        mv ~/Library/Developer/Xcode/DerivedData/Clipboard-*/Build/Products/Release/Clipboard*.app ./Clipboard-History.app
 
     - name: Upload Executable Artifact
       uses: actions/upload-artifact@v3
       with:
         name: Clipboard-History
-        path: ./Clipboard\ History.app
+        path: ./Clipboard-History.app
