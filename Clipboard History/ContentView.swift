@@ -3,6 +3,7 @@ import SwiftUI
 struct ClipboardView: View {
     @ObservedObject var viewModel: ClipboardViewModel
     @State private var search: String = ""
+    @Environment(\.scenePhase) private var scenePhase
     
     init(viewModel: ClipboardViewModel) {
         self.viewModel = viewModel
@@ -34,7 +35,18 @@ struct ClipboardView: View {
                 viewModel.startTimer()
             }.onDisappear {
                 viewModel.stopTimer()
-            }}
+            }.frame(height: 500)
+            GeometryReader { geometry in
+                            Button(action: {
+                if scenePhase == .background {
+                    NSApplication.shared.terminate(self) // This quits the app.
+                }
+            }) {
+                Text("Quit")
+                    .frame(width: geometry.size.width, alignment: .center).padding(5) // Adjust as needed
+                }
+            }
+        }
     }
 
 }
