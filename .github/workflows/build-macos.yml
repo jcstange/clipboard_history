@@ -19,7 +19,14 @@ jobs:
 
     - name: Build macOS Binary
       run: |
-        xcodebuild build
+        xcodebuild \
+          -workspace Clipboard.xcworkspace \
+          -scheme Clipboard\ History \
+          -configuration Release \
+          -destination "platform=macOS" \
+          CODE_SIGN_IDENTITY="Apple Distribution: Joao Stange (LQKA7MHZ56)" \
+          PROVISIONING_PROFILE="Clipboard History Mac Profile" \
+          build
 
     - name: Archive Executable
       run: |
