@@ -21,16 +21,19 @@
       "size" : "32x32"
     },
     {
+      "filename" : "logo@128.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "128x128"
     },
     {
+      "filename" : "logo@256 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "128x128"
     },
     {
+      "filename" : "logo@256.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "256x256"
@@ -48,6 +51,7 @@
       "size" : "512x512"
     },
     {
+      "filename" : "logo@2.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"
